@@ -1,0 +1,23 @@
+#nav {
+  width: 500px;
+}
+#nav ul {
+  list-style: none;
+  padding: 0;
+}
+#nav ul li {
+  float: left;
+}
+#nav ul li a {
+  box-sizing: border-box;
+  display: block;
+  width: 100px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  border: solid 1px #69f;
+  color: #222;
+}
+
+/*# sourceMappingURL=app.css.map */
