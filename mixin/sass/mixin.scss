@@ -1,0 +1,4 @@
+@mixin menu-item-hover($color:#336699, $size: 20px) {
+	font-size: $size;
+	color: $color;
+}
