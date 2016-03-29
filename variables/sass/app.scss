@@ -1,0 +1,33 @@
+$navWidth: 500px;
+$btnNum: 5;
+$mainColor: #69F;
+$bgColor: #fff;
+$bgColorHover: navy;
+$border: solid 1px $mainColor;
+
+#nav {
+	width: $navWidth;
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			float: left;
+			a {
+				box-sizing: border-box;
+				display: block;
+				width: $navWidth/$btnNum;
+				line-height: 30px;
+				text-align: center;
+				text-decoration: none;
+				background-color: $bgColor;
+				border: $border;
+				color: $mainColor;
+				&:hover {
+					color: #fff;
+					background-color: $bgColorHover;
+					font-weight: bolder;
+				}
+			}
+		}
+	}
+}
