@@ -1,0 +1,89 @@
+@import "variables.scss";
+
+#nav {
+	width: $navWidth;
+	line-height: 45px;
+	// border: $borderLine;
+	margin: 0 auto;
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			float: left;
+			a {
+				box-sizing: border-box;
+				display: block;
+				width: $navWidth/$btnNum;
+				text-align: center;
+				text-decoration: none;
+				background-color: $bgColor;
+				border: $border;
+				color: $mainColor;
+				&:hover {
+					color: #fff;
+					background-color: $bgColorHover;
+					font-weight: bolder;
+				}
+			}
+		}
+	}
+}
+
+.workspace {
+	clear: both;
+	margin: 0 auto;
+	width: $navWidth;
+	// border: $borderLine;
+	padding: 5px;
+	.menu {
+		box-sizing: border-box;
+		width: $menuWidth;
+		float: left;
+		border: $borderLine;
+		min-height: 480px;
+		margin-right: $gapMenu2Main;
+	}
+	.main {
+		box-sizing: border-box;
+		width: $navWidth - $menuWidth - $gapMenu2Main;
+		float: right;
+		border: $borderLine;
+		min-height: 480px;
+	}
+}
+
+.footer {
+	clear: both;
+	width: $navWidth;
+	margin: 0 auto;
+	border: $borderLine;
+	margin-top: 5px;
+	min-height: 50px;
+	text-align: center;
+}
+
+// .workspace {
+// 	margin: auto 0;
+// 	height: auto;
+// 	border: $borderLine;
+// 	clear: both;
+// 	// float: none;
+// 	.menu {
+// 		border: $borderLine;
+// 		width: 200px;
+// 		float: left;
+// 		// position: relative;
+// 	}
+
+// 	.main {
+// 		border: $borderLine;
+// 		float: right;
+// 		width: 800px;
+// 		// width: 
+// 		// position: relative;
+// 	}
+// }
+
+// .footer {
+// 	width: 100%;
+// }

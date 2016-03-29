@@ -1,0 +1,61 @@
+#nav {
+  width: 960px;
+  line-height: 45px;
+  margin: 0 auto;
+}
+#nav ul {
+  list-style: none;
+  padding: 0;
+}
+#nav ul li {
+  float: left;
+}
+#nav ul li a {
+  box-sizing: border-box;
+  display: block;
+  width: 192px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  border: solid 1px #69F;
+  color: #69F;
+}
+#nav ul li a:hover {
+  color: #fff;
+  background-color: navy;
+  font-weight: bolder;
+}
+
+.workspace {
+  clear: both;
+  margin: 0 auto;
+  width: 960px;
+  padding: 5px;
+}
+.workspace .menu {
+  box-sizing: border-box;
+  width: 200px;
+  float: left;
+  border: solid 1px blue;
+  min-height: 480px;
+  margin-right: 5px;
+}
+.workspace .main {
+  box-sizing: border-box;
+  width: 755px;
+  float: right;
+  border: solid 1px blue;
+  min-height: 480px;
+}
+
+.footer {
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+  border: solid 1px blue;
+  margin-top: 5px;
+  min-height: 50px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=app.css.map */
