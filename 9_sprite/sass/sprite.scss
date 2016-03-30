@@ -1,0 +1,13 @@
+@import "compass";
+
+$images-layout: horizontal;
+$images-spacing: 5px;
+// $images-ftp-spacing: 15px;
+@import "../images/*.png";
+
+// true indicates dimension with width & height
+@include all-images-sprites(true);
+
+.ftp {
+	@include images-sprite(ftp);
+}

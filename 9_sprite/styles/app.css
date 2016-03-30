@@ -1,0 +1,251 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.images-sprite, .images-about, .images-accessibility, .images-cancel, .images-charging, .images-critical, .images-delete, .images-exit, .images-ftp, .images-hd, .images-home, .images-logout, .images-reboot, .images-suspend, .images-trash-full, .images-yes, .ftp {
+  background-image: url('../images/../images-sb02a1919f0.png');
+  background-repeat: no-repeat;
+}
+
+.images-about {
+  background-position: 0 0;
+  height: 24px;
+  width: 24px;
+}
+
+.images-accessibility {
+  background-position: -29px 0;
+  height: 22px;
+  width: 22px;
+}
+
+.images-cancel {
+  background-position: -56px 0;
+  height: 22px;
+  width: 22px;
+}
+
+.images-charging {
+  background-position: -83px 0;
+  height: 24px;
+  width: 24px;
+}
+
+.images-critical {
+  background-position: -112px 0;
+  height: 22px;
+  width: 22px;
+}
+
+.images-delete {
+  background-position: -139px 0;
+  height: 22px;
+  width: 22px;
+}
+
+.images-exit {
+  background-position: -166px 0;
+  height: 16px;
+  width: 16px;
+}
+
+.images-ftp {
+  background-position: -187px 0;
+  height: 16px;
+  width: 16px;
+}
+
+.images-hd {
+  background-position: -208px 0;
+  height: 22px;
+  width: 22px;
+}
+
+.images-home {
+  background-position: -235px 0;
+  height: 22px;
+  width: 22px;
+}
+
+.images-logout {
+  background-position: -262px 0;
+  height: 22px;
+  width: 22px;
+}
+
+.images-reboot {
+  background-position: -289px 0;
+  height: 22px;
+  width: 22px;
+}
+
+.images-suspend {
+  background-position: -316px 0;
+  height: 22px;
+  width: 22px;
+}
+
+.images-trash-full {
+  background-position: -343px 0;
+  height: 24px;
+  width: 24px;
+}
+
+.images-yes {
+  background-position: -372px 0;
+  height: 24px;
+  width: 24px;
+}
+
+.ftp {
+  background-position: -187px 0;
+}
+
+#nav {
+  width: 960px;
+  line-height: 45px;
+  margin: 0 auto;
+}
+#nav ul {
+  list-style: none;
+  padding: 0;
+}
+#nav ul li {
+  float: left;
+}
+#nav ul li a {
+  box-sizing: border-box;
+  display: block;
+  width: 192px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  border: solid 1px #69F;
+  color: #69F;
+}
+#nav ul li a:hover {
+  color: #fff;
+  background-color: navy;
+  font-weight: bolder;
+}
+
+.workspace {
+  clear: both;
+  margin: 0 auto;
+  width: 960px;
+  padding: 5px;
+}
+.workspace .menu {
+  box-sizing: border-box;
+  width: 200px;
+  float: left;
+  border: solid 1px blue;
+  min-height: 480px;
+  margin-right: 5px;
+  background-color: rgba(0, 51, 102, 0.5);
+}
+.workspace .menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+.workspace .menu ul .menuItem, .workspace .menu ul .menuSubItem {
+  color: white;
+  font-family: Arial;
+  cursor: pointer;
+}
+.workspace .menu ul .menuItem, .workspace .menu ul .menuSubItem {
+  font-size: 16px;
+  line-height: 27px;
+  padding-left: 30px;
+}
+.workspace .menu ul .menuItem:hover, .workspace .menu ul .menuSubItem:hover {
+  font-size: 20px;
+  color: #336699;
+  line-height: 30px;
+}
+.workspace .menu ul .menuSubItem {
+  font-size: 14px;
+  padding-left: 50px;
+}
+.workspace .menu ul .menuSubItem:hover {
+  font-size: 18px;
+  color: green;
+  line-height: 28px;
+}
+.workspace .main {
+  box-sizing: border-box;
+  width: 755px;
+  float: right;
+  border: solid 1px blue;
+  min-height: 480px;
+}
+.workspace .main .myImage {
+  background-image: url('../images/../images/boat.jpeg');
+  width: 389px;
+  height: 129px;
+  border: solid 1px navy;
+}
+
+.footer {
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+  border: solid 1px blue;
+  margin-top: 5px;
+  min-height: 50px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=app.css.map */
