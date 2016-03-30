@@ -1,0 +1,9 @@
+@function line-height($size: 20px) {
+	@return $size + 10px;
+}
+
+@mixin menu-item-hover($color:#336699, $size:20px) {
+	font-size: $size;
+	color: $color;
+	line-height: line-height($size);
+}

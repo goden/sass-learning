@@ -1,0 +1,99 @@
+@import "compass";
+@import "compass/reset";
+@import "variables.scss";
+@import "mixin.scss";
+
+#nav {
+	width: $navWidth;
+	line-height: 45px;
+	// border: $borderLine;
+	margin: 0 auto;
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			float: left;
+			a {
+				box-sizing: border-box;
+				display: block;
+				width: $navWidth/$btnNum;
+				text-align: center;
+				text-decoration: none;
+				background-color: $bgColor;
+				border: $border;
+				color: $mainColor;
+				&:hover {
+					color: #fff;
+					background-color: $bgColorHover;
+					font-weight: bolder;
+				}
+			}
+		}
+	}
+}
+
+.workspace {
+	clear: both;
+	margin: 0 auto;
+	width: $navWidth;
+	// border: $borderLine;
+	padding: 5px;
+	.menu {
+		box-sizing: border-box;
+		width: $menuWidth;
+		float: left;
+		border: $borderLine;
+		min-height: 480px;
+		margin-right: $gapMenu2Main;
+		background-color: rgba(#036, 0.5);
+		ul {
+			list-style: none;
+			padding-left: 0;
+			%item {
+				color: white;
+				font-family: Arial;
+				cursor: pointer;
+			}
+			.menuItem {
+				@extend %item;
+				font-size: 16px;
+				line-height: 27px;
+				padding-left: 30px;
+				&:hover {
+					@include menu-item-hover();
+				}
+			}
+			.menuSubItem {
+				@extend .menuItem;
+				font-size: 14px;
+				padding-left: 50px;
+				&:hover {
+					@include menu-item-hover(green, 18px);
+				}
+			}
+		}
+	}
+	.main {
+		box-sizing: border-box;
+		width: $navWidth - $menuWidth - $gapMenu2Main;
+		float: right;
+		border: $borderLine;
+		min-height: 480px;
+		.myImage {
+			background-image: image-url($myImageUrl, false, false);
+			width: image-width($myImageUrl);
+			height: image-height($myImageUrl);
+			border: solid 1px navy;
+		}
+	}
+}
+
+.footer {
+	clear: both;
+	width: $navWidth;
+	margin: 0 auto;
+	border: $borderLine;
+	margin-top: 5px;
+	min-height: 50px;
+	text-align: center;
+}
