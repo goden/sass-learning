@@ -1,0 +1,48 @@
+@import "compass/reset";
+@import "susy";
+
+$susy: (
+	gutter-position: split,
+	debug: (image:show)
+);
+
+@include border-box-sizing;
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+.boxRow {
+	margin: 10px 0;
+	border: solid 1px #369;
+	height: 80px;
+	@include container();
+}
+
+%box {
+	height: 80px;
+	background-color: purple;
+}
+
+.box1 {
+	@extend %box;
+	@include span(1);
+}
+
+.box2 {
+	@extend %box;
+	@include span(2);
+}
+
+.box3 {
+	@extend %box;
+	@include span(3);
+}
+
+.box4 {
+	@extend %box;
+	@include span(4);
+}
+
+
