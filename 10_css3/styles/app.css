@@ -241,6 +241,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 129px;
   border: solid 1px navy;
 }
+.workspace .main .mySprites li {
+  float: left;
+}
+.workspace .main .opacity1, .workspace .main .opacity2, .workspace .main .opacity3 {
+  width: 100px;
+  height: 100px;
+  background-color: navy;
+  float: left;
+}
+.workspace .main .opacity1 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+.workspace .main .opacity2 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+.workspace .main .opacity3 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
 
 .footer {
   clear: both;

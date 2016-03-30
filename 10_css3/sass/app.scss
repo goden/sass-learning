@@ -88,6 +88,30 @@
 			height: image-height($myImageUrl);
 			border: solid 1px navy;
 		}
+		.mySprites {
+			li {
+				float: left;
+			}
+		}
+		%opacity{
+			width: 100px;
+			height: 100px;
+			background-color: navy;
+			float: left;
+		}
+		.opacity1 {
+			@extend %opacity;
+			@include opacity(0.3);
+		}
+		.opacity2 {
+			@extend %opacity;
+			@include opacity(0.5);
+		}
+		.opacity3 {
+			@extend %opacity;
+			@include opacity(0.7);
+
+		}
 	}
 }
 
