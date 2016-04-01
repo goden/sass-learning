@@ -70,13 +70,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 html, body {
   width: 100%;
   height: 100%;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .boxRow {
   margin: 10px 0;
   border: solid 1px #369;
@@ -97,13 +97,13 @@ html, body {
   clear: both;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .box1, .box2, .box3, .box4 {
   height: 80px;
   background-color: lightblue;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .box1 {
   width: 21.7391304348%;
   float: left;
@@ -111,7 +111,7 @@ html, body {
   margin-right: 1.6304347826%;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .box2 {
   width: 46.7391304348%;
   float: left;
@@ -119,7 +119,7 @@ html, body {
   margin-right: 1.6304347826%;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .box3 {
   width: 71.7391304348%;
   float: left;
@@ -127,7 +127,7 @@ html, body {
   margin-right: 1.6304347826%;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .box4 {
   width: 96.7391304348%;
   float: left;

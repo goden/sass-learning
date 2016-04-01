@@ -1,15 +1,17 @@
 @import "compass/reset";
 @import "susy";
 
+$columns: 4;
+
 $susy: (
-	// float: left,				// float, grid的排列方向
-	// container: auto,			// container, grid 系統的寬度
+	// float: left,					// float, grid的排列方向
+	// container: auto,				// container, grid 系統的寬度
 	// container-position: center,	// grid系統水平排列方向
 	// last-flow: to,				// 
-	gutter-position: split,		// gutter在grid間隔的分配位置
-	debug: (image:show),		// 顯示格線
-	gutters: .15				// gutter與grid寬度的比例
-	// columns: 4					// 顯示grid個數
+	gutter-position: split,			// gutter在grid間隔的分配位置
+	debug: (image:show),			// 顯示格線
+	gutters: .15,					// gutter與grid寬度的比例
+	columns: $columns				// 顯示grid個數
 );
 
 @include border-box-sizing;
@@ -31,24 +33,31 @@ html, body{
 	background-color: lightblue;
 }
 
-.box1 {
-	@extend %box;
-	@include span(1);
+@for $i from 1 through $columns {
+	.box#{$i} {
+		@extend %box;
+		@include span($i);
+	}
 }
 
-.box2 {
-	@extend %box;
-	@include span(2);
-}
+// .box1 {
+// 	@extend %box;
+// 	@include span(1);
+// }
 
-.box3 {
-	@extend %box;
-	@include span(3);
-}
+// .box2 {
+// 	@extend %box;
+// 	@include span(2);
+// }
 
-.box4 {
-	@extend %box;
-	@include span(4);
-}
+// .box3 {
+// 	@extend %box;
+// 	@include span(3);
+// }
+
+// .box4 {
+// 	@extend %box;
+// 	@include span(4);
+// }
 
 
