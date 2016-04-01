@@ -2,8 +2,14 @@
 @import "susy";
 
 $susy: (
-	gutter-position: split,
-	debug: (image:show)
+	// float: left,				// float, grid的排列方向
+	// container: auto,			// container, grid 系統的寬度
+	// container-position: center,	// grid系統水平排列方向
+	// last-flow: to,				// 
+	gutter-position: split,		// gutter在grid間隔的分配位置
+	debug: (image:show),		// 顯示格線
+	gutters: .15				// gutter與grid寬度的比例
+	// columns: 4					// 顯示grid個數
 );
 
 @include border-box-sizing;
