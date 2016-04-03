@@ -1,8 +1,8 @@
 @import "compass/reset";
 @import "susy";
 
-$columns: 24;
-$boxRow: 60px;
+$columns: 16;
+$boxRowHeight: 60px;
 
 $susy: (
 	// float: left,					// float, grid的排列方向
@@ -23,20 +23,21 @@ $susy: (
 // }
 
 .boxWrap {
-	max-width: 960px;
-	@include container(960px);
+	// max-width: 960px;
+	@include container();
 }
 
 .boxRow {
 	margin: 10px 0;
 	border: solid 1px #369;
-	height: $boxRow;
-	@include container();
+	height: $boxRowHeight;
+	// max-width: 960px;
+	// @include container();
 }
 
 %box {
-	height: $boxRow;
-	// background-color: lightblue;
+	height: $boxRowHeight;
+	background-color: navy;
 }
 
 @for $i from 1 through $columns {
