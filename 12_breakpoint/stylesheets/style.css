@@ -1,0 +1,259 @@
+/* line 5, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/style.scss */
+body {
+  background-color: #fff;
+}
+@media (min-width: 480px) {
+  /* line 21, ../sass/style.scss */
+  body {
+    background-color: blue;
+  }
+}
+@media (min-width: 768px) {
+  /* line 21, ../sass/style.scss */
+  body {
+    background-color: purple;
+  }
+}
+@media (min-width: 980px) {
+  /* line 21, ../sass/style.scss */
+  body {
+    background-color: green;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 21, ../sass/style.scss */
+  body {
+    background-color: yellow;
+  }
+}
+
+/* line 37, ../sass/style.scss */
+.boxWrap {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, transparent 10%, rgba(102, 102, 255, 0.25) 10%, rgba(179, 179, 255, 0.25) 90%, transparent 90%);
+  background-size: 6.25%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.boxWrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 42, ../sass/style.scss */
+.boxRow {
+  margin: 10px 0;
+  border: solid 1px #369;
+  height: 60px;
+}
+
+/* line 50, ../sass/style.scss */
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16 {
+  height: 60px;
+  background-color: navy;
+}
+
+/* line 56, ../sass/style.scss */
+.box1 {
+  width: 5%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box2 {
+  width: 11.25%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box3 {
+  width: 17.5%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box4 {
+  width: 23.75%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box5 {
+  width: 30%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box6 {
+  width: 36.25%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box7 {
+  width: 42.5%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box8 {
+  width: 48.75%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box9 {
+  width: 55%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box10 {
+  width: 61.25%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box11 {
+  width: 67.5%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box12 {
+  width: 73.75%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box13 {
+  width: 80%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box14 {
+  width: 86.25%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box15 {
+  width: 92.5%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
+
+/* line 56, ../sass/style.scss */
+.box16 {
+  width: 98.75%;
+  float: left;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+}
