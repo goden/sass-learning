@@ -21,16 +21,16 @@ $susy: (
 body {
 	background-color: #fff;
 	@include breakpoint(480px) {
-		background-color: blue;
+		background-color: #ddd;
 	}
 	@include breakpoint(768px) {
-		background-color: purple;
+		background-color: #bbb;
 	}
 	@include breakpoint(980px) {
-		background-color: green;
+		background-color: #999;
 	}
 	@include breakpoint(1280px) {
-		background-color: yellow;
+		background-color: #777;
 	}
 }
 
