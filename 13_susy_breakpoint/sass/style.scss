@@ -1,0 +1,60 @@
+@import "compass/reset";
+@import "breakpoint";
+@import "susy";
+
+$columns: 16;
+$boxRowHeight: 60px;
+
+$susy: (
+	// float: left,					// float, grid的排列方向
+	// container: auto,				// container, grid 系統的寬度
+	// container-position: center,	// grid系統水平排列方向
+	// last-flow: to,				// 
+	gutter-position: split,			// gutter在grid間隔的分配位置
+	debug: (image:show),			// 顯示格線
+	gutters: 1/4,					// gutter與grid寬度的比例
+	columns: $columns				// 顯示grid個數
+);
+
+@include border-box-sizing;
+
+body {
+	background-color: #fff;
+	@include breakpoint(480px) {
+		background-color: #ddd;
+	}
+	@include breakpoint(768px) {
+		background-color: #bbb;
+	}
+	@include breakpoint(980px) {
+		background-color: #999;
+	}
+	@include breakpoint(1280px) {
+		background-color: #777;
+	}
+}
+
+.boxWrap {
+	// max-width: 960px;
+	@include container();
+}
+
+.boxRow {
+	margin: 10px 0;
+	border: solid 1px #369;
+	height: $boxRowHeight;
+	// max-width: 960px;
+	// @include container();
+}
+
+%box {
+	height: $boxRowHeight;
+	background-color: navy;
+}
+
+@for $i from 1 through $columns {
+	.box#{$i} {
+		@extend %box;
+		@include span($i);
+	}
+}

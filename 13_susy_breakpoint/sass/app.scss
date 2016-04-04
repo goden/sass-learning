@@ -1,0 +1,88 @@
+@import "compass/reset";
+@import "compass";
+@import "breakpoint";
+@import "susy";
+
+$susy: (
+	columns: 2,
+	gutters: 1/4,
+	gutter-position: split,
+	debug: (image:show)
+);
+
+@include border-box-sizing;
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.boxRow {
+	min-height: 100%;
+	@include container();
+	background-color: #fff;
+	// @include opacity(1.0);
+	>div {
+		height: 100px;
+		&.grid-1 {
+			@include span(1);
+		}
+		&.grid-2 {
+			@include span(2);
+		}
+	}
+}
+
+@include susy-breakpoint(480px, 4) {
+	.boxRow {
+		min-height: 100%;
+		@include container();
+		background-color: #666;
+		// @include opacity(0.1);
+		>div {
+			height: 100px;
+			&.grid-1 {
+				@include span(1);
+			}
+			&.grid-2 {
+				@include span(2);
+			}
+		}
+	}
+}
+
+@include susy-breakpoint(768px, 6) {
+	.boxRow {
+		min-height: 100%;
+		@include container();
+		background-color: #999;
+		// @include opacity(0.4);
+		>div {
+			height: 100px;
+			&.grid-1 {
+				@include span(1);
+			}
+			&.grid-2 {
+				@include span(2);
+			}
+		}
+	}
+}
+
+@include susy-breakpoint(980px, 12) {
+	.boxRow {
+		min-height: 100%;
+		@include container();
+		background-color: #ccc;
+		// @include opacity(0.7);
+		>div {
+			height: 100px;
+			&.grid-1 {
+				@include span(1);
+			}
+			&.grid-2 {
+				@include span(2);
+			}
+		}
+	}
+}
