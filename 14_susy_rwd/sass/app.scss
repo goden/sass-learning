@@ -1,0 +1,131 @@
+@import "compass/reset";
+@import "compass";
+@import "breakpoint";
+@import "susy";
+
+$susy: (
+	columns: 24,
+	gutters: 1,
+	gutter-position: split
+	// debug: (image:show)
+);
+
+// html,body{
+// 	min-width: 320px;
+// }
+
+#wrap{
+	@include container();
+}
+
+main{
+	>* {
+		text-align: center;
+		height: 250px;
+		line-height: 250px;
+		border: 1px solid #222;
+		@include box-sizing(border-box);
+		margin: gutter() auto;
+	}
+	>div{
+		@include span(12);
+	}
+	>aside{
+		@include span(6);
+	}
+	.M {
+		background-color: #f00;
+		// @incldue span(12);
+	}
+	.A1 {
+		background-color: #0f0;
+		// @incldue span(6);
+	}
+	.A2 {
+		background-color: #00f;
+		// @incldue span(6);
+	}
+}
+
+.MA2A1 {
+	.A1, .A2 {
+		float: right;
+	}
+	// .M {
+	// 	float: left;
+	// }
+}
+
+.A1MA2 {
+	// .A1 {
+	// 	float:left;
+	// }
+	.M {
+		margin-left: span(6) + gutter() * 3;
+		margin-right: -100%;
+	}
+	.A2 {
+		float: right;
+	}
+}
+
+.A1A2M {
+	// .A1, .A2 {
+	// 	float: left;
+	// }
+	.M {
+		float: right;
+	}
+}
+
+.A2MA1 {
+	.A1 {
+		float: right;
+	}
+	.M {
+		margin-left: span(6) + gutter() * 3;
+		margin-right: -100%
+	}
+	// .A2 {
+	// 	float: left;
+	// }
+}
+
+.A1A2M {
+	// .A1, .A2 {
+	// 	float: left;
+	// }
+	.M {
+		float: right;
+	}
+}
+
+.A2A1M {
+	.A1, .M {
+		float: right;
+	}
+	// .A2 {
+	// 	float: left;
+	// }
+}
+
+@include breakpoint(max-width 980px) {
+	main {
+		.M {
+			@include span(24);
+			margin-left: gutter() !important;
+			margin-right: gutter() !important;
+		}
+		.A1, .A2 {
+			@include span(12);
+		}
+	}
+}
+
+@include breakpoint(max-width 720px) {
+	main {
+		.A1, .A2 {
+			@include span(24);
+		}
+	}
+}

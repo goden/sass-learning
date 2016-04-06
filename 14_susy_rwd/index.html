@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="tex/css" href="stylesheets/app.css">
+	<title>Susy Grid System</title>
+</head>
+<body>
+	<select id="change_layout">
+		<option value="A1MA2" selected>Layout A1MA2</option>
+		<option value="A1A2M">Layout A1A2M</option>
+		<option value="A2MA1">Layout A2MA1</option>
+		<option value="A2A1M">Layout A2A1M</option>
+		<option value="MA1A2">Layout MA1A2</option>
+		<option value="MA2A1">Layout MA2A1</option>
+	</select>
+	<div id="wrap">
+		<main class="A1MA2">
+			<div class="M">
+				
+				Main
+
+			</div>
+			<aside class="A1">
+				
+				A1
+
+			</aside>
+			<aside class="A2">
+				
+				A2
+
+			</aside>
+		</main>
+	</div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+<script>
+	$('#change_layout').change(function() {
+
+		var $wrap = $(this);
+		console.log($wrap.val());
+
+		$wrap.next().find('main').removeClass().addClass($wrap.val());
+
+	});
+</script>
