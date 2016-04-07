@@ -16,6 +16,11 @@ $susy: (
 
 html {
 	@include adjust-font-size-to($base-font-size);
+	height: 100%;
+}
+
+.wrap {
+	@include container();
 }
 
 h1 {
